@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 36px;
+	color: white;
+
+	background-color: #333;
+}
+
+button {
+	font-family: "Nunito", sans-serif;
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	transform: translateX(-50%);
+	padding: 10px 30px;
+	background: none;
+	color: white;
+	font-weight: 700;
+	border: 3px solid white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.btn-zoom {
+	position: absolute;
+	left: 30%;
+}
+.btn-move {
+	position: absolute;
+	left: 50%;
+}
+.btn-color {
+	position: absolute;
+	left: 70%;
+}
+button:hover {
+	background-color: white;
+	color: black;
+	transition: 500ms;
+}
+
+.square {
+	position: absolute;
+	top: 150px;
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	transform: translateX(-50%);
+}
+
+.blue {
+	background-color: blue;
+	left: 30%;
+	box-shadow: 0 0 15px blue;
+	border: 2px solid rgb(29, 29, 203);
+}
+
+.red {
+	background-color: red;
+	left: 50%;
+	box-shadow: 0 0 15px red;
+	border: 2px solid rgb(201, 16, 16);
+}
+.green {
+	background-color: yellowgreen;
+	left: 70%;
+	box-shadow: 0 0 15px yellowgreen;
+	border: 2px solid rgb(117, 156, 39);
+}
+
+.btn-zoom:hover ~ .square {
+	width: 200px;
+	height: 200px;
+	transition: 500ms;
+}
+.btn-move:hover ~ .square {
+	top: 400px;
+	transition: 500ms;
+}
+.btn-color:hover ~ .square {
+	background-color: black;
+	border: 2px solid white;
+	box-shadow: 0 0 15px rgb(0, 0, 0);
+	transition: 500ms;
+}
